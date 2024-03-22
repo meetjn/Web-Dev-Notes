@@ -1,9 +1,14 @@
 # Web-Dev-Notes
 This repo will contain all the resources and notes that I will use to prepare for my web development journey. 
 
+PRE-REQUISITES:
+
+Basic understanding of React and some of its frameworks. 
+
+
 Question 1: what happens when the website is first reloaded?
 
-answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file. 
+answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file in the react based project. 
 
 NEXTJS (FULL STACK FRAMEWORK)
 
