@@ -120,7 +120,7 @@ This folder is ignored by the router.
 You can access the routes at 
 http://localhost:3000/signup and http://localhost:3000/signin
 
-SERVER AND CLIENT COMPONENTS
+4) SERVER AND CLIENT COMPONENTS
 
 To understand how Server and Client Components work, it's helpful to be familiar with two foundational web concepts:
 
@@ -129,25 +129,24 @@ See docs here: https://nextjs.org/learn/react-foundations/server-and-client-comp
 The environments your application code can be executed in: the server and the client.
 The network boundary that separates server and client code
 
-Server and Client Environments
+4.1) Server and Client Environments
 
-In the context of web applications:
+4.1.1) In the context of web applications:
 
 -> The client refers to the browser on a user’s device that sends a request to a server for your application code. It then turns the response it receives from the server into an    interface the user can interact with.
+
 -> The server refers to the computer in a data center that stores your application code, receives requests from a client, does some computation, and sends back an appropriate      response.
 
-Network Boundary
+4.1.2) Network Boundary
 
 The Network Boundary is a conceptual line that separates the different environments.
 
-NextJS expects you to identify all your components as either client or server
-
-By default, all components are server components.
+NextJS expects you to identify all your components as either client or server By default, all components are server components.
 
 If you want to mark a component as a client component, you need to add the following to the top of the component - 
 "use client"
 
-When should you create client components ?
+question: When should you create client components ?
 
 Whenever you get an error that tells you that you need to create a client component
 
