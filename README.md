@@ -1,27 +1,27 @@
 # Web-Dev-Notes
-This repo will contain all the resources and notes that I will use to prepare for my web development journey. 
+This repo will contain all the resources and notes which I use to prepare for my web development journey. 
 
 PRE-REQUISITES:
 
-Basic understanding of React and some of its frameworks. 
+Basic understanding of React.
 
 
 Question 1: what happens when the website is first reloaded?
 
-answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file in the react based project. 
+answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file in the react-based project. 
 
 NEXTJS (FULL STACK FRAMEWORK)
 
 The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) made the website SEO optimized. 
 
-FEATURES OF NEXTJS:
+FEATURES OF NEXTJS 14:
 1) Server-side rendering - Get rid of SEO problems -> Server-side rendering (SSR) in Next.js is a feature that allows you to render React components on the server instead of the client, improving performance and search engine optimization (SEO). Next.js provides built-in support for SSR through its file-based routing system and API routes.
 2) API routes - Single codebase with frontend and backend -> (IT IS A FULL STACK FRAMEWORK WHERE AS REACT IS A FRONTEND FRAMEWORK).
 3) File-based routing (no need for react-router-dom)
 4) Bundle size optimisations, Static site generation
 5) Maintained by the Vercel team.
 
-Downside as well:
+The downside as well:
 1) Can’t be distributed via a CDN (not easy to deploy on AWS), always needs a server running that does server-side rendering and hence is expensive (It is expensive at scale).
 2) Very opinionated, very hard to move out of it. 
 
@@ -69,7 +69,7 @@ Then, to create further pages, create a new folder and add the page.js file insi
 
 3) UNDERSTANDING LAYOUT IN NEXTJS
 
-A layout is UI that is shared between multiple routes. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
+A layout is a UI that is shared between multiple routes. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
 You can define a layout by default exporting a React component from a layout.js file. The component should accept a children prop that will be populated with a child layout (if it exists) or a page during rendering.
 
 See docs here: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#layouts
@@ -81,9 +81,9 @@ For example, the layout will be shared with the /dashboard and /dashboard/settin
 
 <img width="157" alt="Screenshot 2024-03-22 at 8 26 29 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/bd615819-08e5-4eb3-9332-f613ed0e81bf">
 
-The root layout is defined at the top level of the app directory and applies to all routes. This layout is required and must contain html and body tags, allowing you to modify the initial HTML returned from the server.
+The root layout is defined at the top level of the app directory and applies to all routes. This layout is required and must contain HTML and body tags, allowing you to modify the initial HTML returned from the server.
 This will be present in the root layout file and will shown throughout the web pages. 
-You can acceess this in the root app directory above pages.tsx file. 
+You can access this in the root app directory above pages.tsx file. 
 
 <img width="643" alt="Screenshot 2024-03-22 at 8 29 43 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/57288b35-b0e7-4bd7-93ed-d29732bfafe9">
 
@@ -105,16 +105,16 @@ The two layouts would be nested as such:
 
 3.3) Merging Routes
 
-This is usefull when two file needs to have same layout, so to do this there are two approaches. 
+This is useful when two files need to have the same layout, so to do this there are two approaches. 
 
-1) Move both the signin and signup folder inside a auth folder where we have the layout
+1) Move both the sign-in and signup folders inside an auth folder where we have the layout
 <img width="526" alt="Screenshot 2024-03-22 at 8 57 28 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/67ab5539-06cd-4121-806a-c869b1ff103a">
 
 You can access the routes at 
 http://localhost:3000/auth/signup and http://localhost:3000/auth/signin
 
 2) if you do not want to change the route handler then you can use create a new folder with () around the name. 
-This folder is ignored by the router.
+The router ignores this folder.
 <img width="685" alt="Screenshot 2024-03-22 at 8 58 54 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/5f618fb4-7480-4da1-9738-169210da142a">
 
 You can access the routes at 
@@ -126,7 +126,7 @@ To understand how Server and Client Components work, it's helpful to be familiar
 
 See docs here: https://nextjs.org/learn/react-foundations/server-and-client-components#server-and-client-environments
 
-The environments your application code can be executed in: the server and the client.
+The environments your application code can be executed in: are the server and the client.
 The network boundary that separates server and client code
 
 4.1) Server and Client Environments
@@ -135,7 +135,7 @@ The network boundary that separates server and client code
 
 -> The client refers to the browser on a user’s device that sends a request to a server for your application code. It then turns the response it receives from the server into an    interface the user can interact with.
 
--> The server refers to the computer in a data center that stores your application code, receives requests from a client, does some computation, and sends back an appropriate      response.
+-> The server refers to the computer in a data centre that stores your application code, receives requests from a client, does some computation, and sends back an appropriate      response.
 
 4.1.2) Network Boundary
 
@@ -146,10 +146,81 @@ NextJS expects you to identify all your components as either client or server By
 If you want to mark a component as a client component, you need to add the following to the top of the component - 
 "use client"
 
-question: When should you create client components ?
+question: When should you create client components?
 
 Whenever you get an error that tells you that you need to create a client component
 
-Whenever you’re using something that the server doesn’t understand (useEffect, useState, onClick…)
+Whenever you’re using something the server doesn’t understand (useEffect, useState, onClick…)
 
-Rule of thumb is to defer the client as much as possible
+The rule of thumb is to defer the client as much as possible
+
+5) BACKEND IN NEXTJS
+
+Next.js is a full-stack framework
+This means the same process can handle frontend and backend code.
+
+Why?
+Single codebase for all your codebase
+
+No cors issues, single domain name for your FE and BE
+
+Ease of deployment, deploy a single codebase
+
+5.1) Data Fetching, Caching, and Revalidating
+
+There are four ways you can fetch data:
+
+1. On the server, with fetch
+
+2. On the server, with third-party libraries
+
+3. On the client, via a Route Handler
+
+4. On the client, with third-party libraries.
+
+Ref: https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#fetching-data-on-the-server-with-fetch
+
+5.1) Fetching Data on the Server with fetch
+
+Next.js extends the native fetch Web API to allow you to configure the caching and revalidating behaviour for each fetch request on the server. React extends fetch to automatically memoize fetch requests while rendering a React component tree.
+
+You can use fetch with async/await in Server Components, in Route Handlers, and in Server Actions.
+
+<img width="697" alt="Screenshot 2024-03-23 at 11 44 04 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/1a90bd2a-f755-46cb-aab7-66140c6479a6">
+
+While fetching data you want to make sure that if the fetching data from the backend takes a long time, the user sees a loader in the meantime
+
+5.2) loading.tsx file
+
+Just like page.tsx and layout.tsx, you can define a skeleton.tsx file that will render until all the async operations finish
+Create a loading.tsx file in the root folder
+
+NOTE: NEXT js provides more such files but these are the bare minimum to know of. 
+
+6) Introducing API routes in Next.js
+
+NextJS lets you write backend routes, just like Express does. This is why Next is considered to be a full-stack framework.
+
+The benefits of using NextJS for the backend include - 
+
+1. Code in a single repo
+
+2. All standard things you get in a backend framework like Express
+
+3. Server components can directly talk to the backend
+
+DEFINING ROUTES IN THE BACKEND
+
+We want to introduce a route that returns hardcoded values for a user’s details (email, name).
+
+
+1. Introduce a new folder called API
+2. Add a folder inside called the user
+3. Add a file inside called route.ts
+4. Initialize a GET route inside it
+
+
+   
+
+
+
