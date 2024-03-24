@@ -14,7 +14,7 @@ NEXTJS (FULL STACK FRAMEWORK)
 
 The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) made the website SEO optimized. 
 
-FEATURES OF NEXTJS 14:
+FEATURES OF NEXTJS 13:
 1) Server-side rendering - Get rid of SEO problems -> Server-side rendering (SSR) in Next.js is a feature that allows you to render React components on the server instead of the client, improving performance and search engine optimization (SEO). Next.js provides built-in support for SSR through its file-based routing system and API routes.
 2) API routes - Single codebase with frontend and backend -> (IT IS A FULL STACK FRAMEWORK WHERE AS REACT IS A FRONTEND FRAMEWORK).
 3) File-based routing (no need for react-router-dom)
@@ -184,7 +184,7 @@ Ref: https://nextjs.org/docs/app/building-your-application/data-fetching/fetchin
 
 Next.js extends the native fetch Web API to allow you to configure the caching and revalidating behaviour for each fetch request on the server. React extends fetch to automatically memoize fetch requests while rendering a React component tree.
 
-You can use fetch with async/await in Server Components, in Route Handlers, and in Server Actions.
+You can use fetch with async/await in Server Components, in Route Handlers, and in Server Actions. (i.e. server components can be asynchronous).
 
 <img width="697" alt="Screenshot 2024-03-23 at 11 44 04 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/1a90bd2a-f755-46cb-aab7-66140c6479a6">
 
