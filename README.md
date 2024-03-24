@@ -182,7 +182,7 @@ Ref: https://nextjs.org/docs/app/building-your-application/data-fetching/fetchin
 
 5.1) Fetching Data on the Server with fetch
 
-Next.js extends the native fetch Web API to allow you to configure the caching and revalidating behaviour for each fetch request on the server. React extends fetch to automatically memoize fetch requests while rendering a React component tree.
+Next.js extends the native fetch Web API to allow you to configure the caching and revalidating behaviour for each fetch request on the server. React extends fetch to memoize fetch requests while rendering a React component tree automatically.
 
 You can use fetch with async/await in Server Components, in Route Handlers, and in Server Actions. (i.e. server components can be asynchronous).
 
@@ -195,7 +195,7 @@ While fetching data you want to make sure that if the fetching data from the bac
 Just like page.tsx and layout.tsx, you can define a skeleton.tsx file that will render until all the async operations finish
 Create a loading.tsx file in the root folder
 
-NOTE: NEXT js provides more such files but these are the bare minimum to know of. 
+NOTE: NEXT js provides more such files but these are the bare minimum. 
 
 6) Introducing API routes in Next.js
 
@@ -221,6 +221,13 @@ We want to introduce a route that returns hardcoded values for a user’s detail
 
 
    
+Question 3) What is the difference between authentication and authorization?
+answer: Authentication and authorization for both servers have different purposes
 
+Authentication
+Authentication is the process of verifying the identity of a user or system attempting to access a resource or service. It involves presenting credentials, such as a username/password combination, or any other means of identification.
 
+Authorization
+Authorization is the process of determining what actions or operations an authenticated user is allowed to perform within a system or on a specific resource.
 
+It ensures that authenticated users or systems can only perform actions or access resources that they have been explicitly granted permission to access.
