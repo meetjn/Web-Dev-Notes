@@ -1,5 +1,4 @@
 # Web-Dev-Notes
-This repo will contain all the resources and notes which I use to prepare for my web development journey. 
 
 PRE-REQUISITES:
 
@@ -211,13 +210,17 @@ The benefits of using NextJS for the backend include -
 
 DEFINING ROUTES IN THE BACKEND
 
-We want to introduce a route that returns hardcoded values for a user’s details (email, name).
+We want to introduce a route that returns hardcoded values for a user’s details (email, name) for example.
 
 
 1. Introduce a new folder called API
 2. Add a folder inside called the user
 3. Add a file inside called route.ts
 4. Initialize a GET route inside it
+
+NOTE:
+Route the user to the landing page if the signup succeeded
+Ref use router hook - https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#userouter-hook
 
 
    
@@ -231,3 +234,10 @@ Authorization
 Authorization is the process of determining what actions or operations an authenticated user is allowed to perform within a system or on a specific resource.
 
 It ensures that authenticated users or systems can only perform actions or access resources that they have been explicitly granted permission to access.
+
+
+NEXTAUTH.JS
+
+NextAuth.js is a complete open-source authentication solution for Next.js applications.
+
+It is designed from the ground up to support Next.js and Serverless.
