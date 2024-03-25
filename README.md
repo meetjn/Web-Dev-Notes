@@ -236,8 +236,32 @@ Authorization is the process of determining what actions or operations an authen
 It ensures that authenticated users or systems can only perform actions or access resources that they have been explicitly granted permission to access.
 
 
-NEXTAUTH.JS
+7) NEXTAUTH.JS
 
 NextAuth.js is a complete open-source authentication solution for Next.js applications.
 
 It is designed from the ground up to support Next.js and Serverless.
+
+Let's say you want to create a catch-all route handler the way to do this is: 
+
+Create a simple next.js app 
+npx create-next-app@latest
+
+Create app/api/auth/[...nextauth]/route.ts 
+
+npm install next-auth
+
+Adding providers - There are three broad types of providers
+1) OAuth (Login with Google)
+2) Email (Passwordless Email login via email OTP)
+3) Credentials (your own strategy)
+
+ref: https://next-auth.js.org/configuration/providers/oauth
+
+7.3) CREDENTIALS 
+
+ref: https://next-auth.js.org/configuration/providers/credentials
+
+GOOGLE AUTH : https://next-auth.js.org/providers/google 
+
+GITHUB AUTH: https://next-auth.js.org/providers/github
