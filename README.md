@@ -26,7 +26,7 @@ The downside as well:
 
 1) BOOTSTAPPING UP THE NEXTJS PROJECT:
 
-Run: npx create-next-app@latest
+         Run: npx create-next-app@latest
 
 After running the command, you will notice that these three files have been initialized. 
 
@@ -245,11 +245,12 @@ It is designed from the ground up to support Next.js and Serverless.
 Let's say you want to create a catch-all route handler the way to do this is: 
 
 Create a simple next.js app 
-npx create-next-app@latest
+
+      npx create-next-app@latest
 
 Create app/api/auth/[...nextauth]/route.ts 
 
-npm install next-auth
+      npm install next-auth
 
 Adding providers - There are three broad types of providers
 1) OAuth (Login with Google)
