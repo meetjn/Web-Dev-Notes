@@ -9,7 +9,7 @@ Question 1: what happens when the website is first reloaded?
 
 answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file in the react-based project. 
 
-NEXTJS (FULL STACK FRAMEWORK)
+# NEXTJS (FULL STACK FRAMEWORK)
 
 The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) made the website SEO optimized. 
 
@@ -24,7 +24,7 @@ The downside as well:
 1) Can’t be distributed via a CDN (not easy to deploy on AWS), always needs a server running that does server-side rendering and hence is expensive (It is expensive at scale).
 2) Very opinionated, very hard to move out of it. 
 
-1) BOOTSTAPPING UP THE NEXTJS PROJECT:
+# 1) BOOTSTAPPING UP THE NEXTJS PROJECT:
 
          Run: npx create-next-app@latest
 
@@ -43,7 +43,7 @@ Q2: how many dev dependencies do we have?
 
 A: TWO types -> dependencies and dev dependencies. 
 
-2) UNDERSTANDING ROUTING IN NEXTJS
+# 2) UNDERSTANDING ROUTING IN NEXTJS
 
 Next.js has a file-based router, which means that the way you create your files describes what renders on a route.
 Each folder represents a route segment that maps to a URL segment. To create a nested route, you can nest folders inside each other.
@@ -66,7 +66,7 @@ Then, to create further pages, create a new folder and add the page.js file insi
 
 <img width="633" alt="Screenshot 2024-03-22 at 7 44 08 AM" src="https://github.com/meetjn/Web-Dev-Notes/assets/141674944/84f5b044-cf32-45d9-8524-361b15f12fec">
 
-3) UNDERSTANDING LAYOUT IN NEXTJS
+# 3) UNDERSTANDING LAYOUT IN NEXTJS
 
 A layout is a UI that is shared between multiple routes. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
 You can define a layout by default exporting a React component from a layout.js file. The component should accept a children prop that will be populated with a child layout (if it exists) or a page during rendering.
@@ -119,7 +119,7 @@ The router ignores this folder.
 You can access the routes at 
 http://localhost:3000/signup and http://localhost:3000/signin
 
-4) SERVER AND CLIENT COMPONENTS
+# 4) SERVER AND CLIENT COMPONENTS
 
 To understand how Server and Client Components work, it's helpful to be familiar with two foundational web concepts:
 
@@ -153,7 +153,7 @@ Whenever you’re using something the server doesn’t understand (useEffect, us
 
 The rule of thumb is to defer the client as much as possible
 
-5) BACKEND IN NEXTJS
+# 5) BACKEND IN NEXTJS
 
 Next.js is a full-stack framework
 This means the same process can handle frontend and backend code.
@@ -208,7 +208,7 @@ The benefits of using NextJS for the backend include -
 
 3. Server components can directly talk to the backend
 
-DEFINING ROUTES IN THE BACKEND
+# DEFINING ROUTES IN THE BACKEND
 
 We want to introduce a route that returns hardcoded values for a user’s details (email, name) for example.
 
@@ -236,7 +236,7 @@ Authorization is the process of determining what actions or operations an authen
 It ensures that authenticated users or systems can only perform actions or access resources that they have been explicitly granted permission to access.
 
 
-7) NEXTAUTH.JS
+# 7) NEXTAUTH.JS
 
 NextAuth.js is a complete open-source authentication solution for Next.js applications.
 
