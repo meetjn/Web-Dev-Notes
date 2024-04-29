@@ -266,3 +266,30 @@ ref: https://next-auth.js.org/configuration/providers/credentials
 GOOGLE AUTH : https://next-auth.js.org/providers/google 
 
 GITHUB AUTH: https://next-auth.js.org/providers/github
+
+# Middlewares in NextJs
+
+Middleware allows you to run code before a request is completed. Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.
+
+Middleware runs before cached content and routes are matched. See Matching Paths for more details.
+
+see docs here: https://nextjs.org/docs/app/building-your-application/routing/middleware
+
+# CSR And SSr And SSG
+
+Client-side rendering (CSR) is a modern technique used in web development where the rendering of a webpage is performed in the browser using JavaScript. Instead of the server sending a fully rendered HTML page to the client
+Good example of CSR - React 
+
+SSR
+When the rendering process (converting JS components to HTML) happens on the server, it’s called SSR.
+Why SSR?
+SEO Optimisations
+Gets rid of the waterfalling problem
+No white flash before you see content
+
+SSG
+
+If a page uses Static Generation, the page HTML is generated at build time. That means in production, the page HTML is generated when you run next build. This HTML will then be reused on each request. It can be cached by a CDN.
+
+Why?
+If you use static site generation, you can defer the expensive operation of rendering a page to the build time so it only happens once. 
