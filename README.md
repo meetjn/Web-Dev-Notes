@@ -1,6 +1,17 @@
 # Web-Dev-Notes
 
-PRE-REQUISITES:
+Basic understanding of HTML CSS and JavaScript.
+
+HTML stands for hypertext markup language, it works by using something called markup tags. These tags describe the content that is displayed in the browser window, this content can be things like headings, paragraphs, images and even multimedia elements such as audio and video, the way HTML describes the content is known as markup.
+
+The way HTML describes the content is known as markup. CSS is short for cascading style sheets and adds visual enhancements like colors and layout to the web page, this is commonly known as styling. It works by enhancing the HTML elements and telling them how to display.
+
+JavaScript is a programming language built into the browser. JavaScript provides web developers with tools for interactivity, data processing, control and action.
+
+Question- 
+But how exactly does web page/ Website code get translated to display the content that you see on your screen? 
+
+When a copy of that webpage is sent from the web server to your browser, each line of code is processed in sequential order from first to last. As each line is interpreted, the browser creates the building blocks, which is the visual representation you see on the screen. This creation process is known as page rendering.
 
 Basic understanding of React.
 
@@ -11,7 +22,7 @@ answer: the first request goes to the server and gets the HTML and then the seco
 
 # NEXTJS (FULL STACK FRAMEWORK)
 
-The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) made the website SEO optimized. 
+The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) it made the website SEO optimized. 
 
 FEATURES OF NEXTJS 13:
 1) Server-side rendering - Get rid of SEO problems -> Server-side rendering (SSR) in Next.js is a feature that allows you to render React components on the server instead of the client, improving performance and search engine optimization (SEO). Next.js provides built-in support for SSR through its file-based routing system and API routes.
