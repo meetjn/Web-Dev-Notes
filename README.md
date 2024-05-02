@@ -1,10 +1,21 @@
 # Web-Dev-Notes
 
-Basic understanding of HTML CSS and JavaScript.
+### Basic understanding of HTML CSS and JavaScript.
+
+Hypertext is a text which contains links to other text. Markup refers to tags and elements used within a document.
 
 HTML stands for hypertext markup language, it works by using something called markup tags. These tags describe the content that is displayed in the browser window, this content can be things like headings, paragraphs, images and even multimedia elements such as audio and video, the way HTML describes the content is known as markup.
 
 The way HTML describes the content is known as markup. CSS is short for cascading style sheets and adds visual enhancements like colors and layout to the web page, this is commonly known as styling. It works by enhancing the HTML elements and telling them how to display.
+
+By default, nearly all html elements are organized into one of two categories namely in block and in line elements.
+
+
+A block level element will occupy the full horizontal width of its parent element and the vertical height of its content. Each block level element will have a new line before and after. Therefore, multiple block level elements will stack on top of each other like a stack of boxes. 
+
+In line elements only occupy the width and height of their content. They don't appear on a new line, hence the name in line. Therefore, multiple in line elements can form a row of elements. When coding in html, you need to be able to recognize and use block elements. Some examples of block level elements include the tags, div form and heading. 
+
+You also need to be familiar with common in line elements. These include the tags anchor, image, input label, bold, italics, emphasis and span.
 
 JavaScript is a programming language built into the browser. JavaScript provides web developers with tools for interactivity, data processing, control and action.
 
@@ -19,6 +30,10 @@ Basic understanding of React.
 Question 1: what happens when the website is first reloaded?
 
 answer: the first request goes to the server and gets the HTML and then the second request goes out to get the javascript file in the react-based project. 
+
+Note- 
+
+A library is a collection of reusable code that a developer can call as needed, while a framework provides a structured application skeleton that the developer fills in with their code.
 
 # NEXTJS (FULL STACK FRAMEWORK)
 
