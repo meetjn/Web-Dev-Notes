@@ -51,6 +51,10 @@ Step 3: The changed elements are updated in the browser DOM.
 
 Step 4: The displayed webpage updates to match the browser DOM.
 
+ The concept of the single-page application or SPA for short? This is a one-page website where some of the page content changes based on user interaction.
+
+ React provides two types of components, functional components and class components.
+
 # NEXTJS (FULL STACK FRAMEWORK)
 
 The problem nextJS has solved over reactjs is that -> 1) it solved the water falling problem and 2) it made the website SEO optimized. 
