@@ -8,14 +8,14 @@ HTML stands for hypertext markup language, it works by using something called ma
 
 The way HTML describes the content is known as markup. CSS is short for cascading style sheets and adds visual enhancements like colors and layout to the web page, this is commonly known as styling. It works by enhancing the HTML elements and telling them how to display.
 
-By default, nearly all html elements are organized into one of two categories namely in block and in line elements.
+By default, nearly all HTML elements are organized into one of two categories namely in block and in line elements.
 
 
-A block level element will occupy the full horizontal width of its parent element and the vertical height of its content. Each block level element will have a new line before and after. Therefore, multiple block level elements will stack on top of each other like a stack of boxes. 
+A block-level element will occupy the full horizontal width of its parent element and the vertical height of its content. Each block level element will have a new line before and after. Therefore, multiple block-level elements will stack on top of each other like a stack of boxes. 
 
-In line elements only occupy the width and height of their content. They don't appear on a new line, hence the name in line. Therefore, multiple in line elements can form a row of elements. When coding in html, you need to be able to recognize and use block elements. Some examples of block level elements include the tags, div form and heading. 
+In-line elements only occupy the width and height of their content. They don't appear on a new line, hence the name in line. Therefore, multiple in line elements can form a row of elements. When coding in HTML, you need to be able to recognize and use block elements. Some examples of block level elements include the tags, div form and heading. 
 
-You also need to be familiar with common in line elements. These include the tags anchor, image, input label, bold, italics, emphasis and span.
+You also need to be familiar with common in-line elements. These include the tags anchor, image, input label, bold, italics, emphasis and span.
 
 JavaScript is a programming language built into the browser. JavaScript provides web developers with tools for interactivity, data processing, control and action.
 
@@ -24,7 +24,7 @@ But how exactly does web page/ Website code get translated to display the conten
 
 When a copy of that webpage is sent from the web server to your browser, each line of code is processed in sequential order from first to last. As each line is interpreted, the browser creates the building blocks, which is the visual representation you see on the screen. This creation process is known as page rendering.
 
-Basic understanding of React.
+# Basic understanding of React.
 
 
 Question 1: what happens when the website is first reloaded?
@@ -34,6 +34,22 @@ answer: the first request goes to the server and gets the HTML and then the seco
 Note- 
 
 A library is a collection of reusable code that a developer can call as needed, while a framework provides a structured application skeleton that the developer fills in with their code.
+
+## ReactJs Notes
+
+How does react work? 
+
+React builds a representation of the browser Document Object Model or DOM in memory called the virtual DOM. As components are updated, React checks to see if the component’s HTML code in the virtual DOM matches the browser DOM. If a change is required, the browser DOM is updated. If nothing has changed, then no update is performed.
+
+this is called the reconciliation process and can be broken down into the following steps:
+
+Step 1: The virtual DOM is updated.
+
+Step 2: The virtual DOM is compared to the previous version of the virtual DOM and checks which elements have changed.
+
+Step 3: The changed elements are updated in the browser DOM.
+
+Step 4: The displayed webpage updates to match the browser DOM.
 
 # NEXTJS (FULL STACK FRAMEWORK)
 
