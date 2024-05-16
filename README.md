@@ -1,5 +1,7 @@
 # Web-Dev-Notes
 
+## Frontend 
+
 ### Basic understanding of HTML CSS and JavaScript.
 
 Hypertext is a text which contains links to other text. Markup refers to tags and elements used within a document.
@@ -324,7 +326,7 @@ see docs here: https://nextjs.org/docs/app/building-your-application/routing/mid
 # CSR And SSr And SSG
 
 Client-side rendering (CSR) is a modern technique used in web development where the rendering of a webpage is performed in the browser using JavaScript. Instead of the server sending a fully rendered HTML page to the client
-Good example of CSR - React 
+A good example of CSR - React 
 
 SSR
 When the rendering process (converting JS components to HTML) happens on the server, it’s called SSR.
@@ -339,3 +341,20 @@ If a page uses Static Generation, the page HTML is generated at build time. That
 
 Why?
 If you use static site generation, you can defer the expensive operation of rendering a page to the build time so it only happens once. 
+
+
+## Backend
+
+What are the types of communication?
+
+There are two types of communication Synchronous and Asynchronous communication
+
+Synchronous (Strong coupling)
+HTTP (REST/GraphQL)
+Websocket (debatable if sync or async)
+ 
+Asynchronous (Weak coupling)
+Messaging queues
+Pub subs
+Server-Sent Events 
+Websocket (debatable if sync or async)
